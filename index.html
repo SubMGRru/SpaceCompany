@@ -54,18 +54,15 @@
 					<img src="SpaceCompanyFavicon.png" style="width:40px; height:auto; margin-top:-30%;">
 				</a>
 				<a class="navbar-brand page-title" href="#">
-					<span id="companyName">Котики</span>в Космосе
-				</a>
-				<a class="navbar-brand" ng-href="" target="_blank" href="https://github.com/sparticle999/SpaceCompany#changelog">
-					<span id="versionLabel" class="text-muted small ng-binding"></span>
+					Котики в Космосе
 				</a>
 				<a class="navbar-brand">
 					<span id="energyLow" class="text-muted small ng-binding red hidden">
-						Energy Deficit!
+						Не хватает энергии! Котики в шоке!
 					</span>
 				</a>
-				<a class="navbar-brand pointer" target="_blank" href="http://discord.gg/hgRUjVp">
-					<span class="text-muted small">Join our Discord!</span>
+				<a class="navbar-brand pointer" target="_blank" href="#">
+					<span class="text-muted small">Присоединяйтесь ВКонтакте!</span>
 				</a>
 				<div class="pull-right" style="width:200px;">
 					<a class="navbar-brand">
@@ -84,14 +81,14 @@
 
 <!-- Nav tabs -->
 	<ul class="nav nav-tabs no-select" role="tablist" id="tabList">
-		<li role="presentation" class="active"><a href="#resources" aria-controls="resources" role="tab" data-toggle="tab" onclick="tabClicked('resources')"><div id="resourcesTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Resources</a></li>
-		<li role="presentation" id="researchTab" class="hidden"><a href="#research" aria-controls="research" role="tab" data-toggle="tab" onclick="tabClicked('research')"><div id="researchTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Research</a></li>
-    	<li role="presentation" id="solarSystemTab" class="hidden"><a href="#solarSystem" aria-controls="solarSystem" role="tab" data-toggle="tab"onclick="tabClicked('solarSystem')"><div id="solarSystemTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Solar System</a></li>
+		<li role="presentation" class="active"><a href="#resources" aria-controls="resources" role="tab" data-toggle="tab" onclick="tabClicked('resources')"><div id="resourcesTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Ресурсы</a></li>
+		<li role="presentation" id="researchTab" class="hidden"><a href="#research" aria-controls="research" role="tab" data-toggle="tab" onclick="tabClicked('research')"><div id="researchTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Исследования</a></li>
+    	<li role="presentation" id="solarSystemTab" class="hidden"><a href="#solarSystem" aria-controls="solarSystem" role="tab" data-toggle="tab"onclick="tabClicked('solarSystem')"><div id="solarSystemTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Солнечная система</a></li>
     	<li role="presentation" id="wonderTab" class="hidden"><a href="#wonder" aria-control="wonder" role="tab" data-toggle="tab"onclick="tabClicked('wonder')"><div id="wonderTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Wonders</a></li>
     	<li role="presentation" id="solCenterTopTab" class="hidden"><a href="#solCenterPage" aria-control="solCenterPage" role="tab" data-toggle="tab"onclick="tabClicked('solCenter')"><div id="solCenterTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Sol Center</a></li>
     	<li role="presentation" id="machineTopTab" style="display: none;"><a href="#machineTab" aria-control="machineTab" role="tab" data-toggle="tab"onclick="tabClicked('machine')"><div id="machineTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Machines</a></li>
-    	<li role="presentation" class="pull-right"><a href="#help" aria-control="help" role="tab" data-toggle="tab"><div class="glyphicon glyphicon-info-sign"></div> Help / FAQ</a></li>
-    	<li role="presentation" class="pull-right"><a href="#more" aria-control="more" role="tab" data-toggle="tab" onclick="tabClicked('more')"><div id="moreTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> More...</a></li>
+    	<li role="presentation" class="pull-right"><a href="#help" aria-control="help" role="tab" data-toggle="tab"><div class="glyphicon glyphicon-info-sign"></div> Помощь</a></li>
+    	<li role="presentation" class="pull-right"><a href="#more" aria-control="more" role="tab" data-toggle="tab" onclick="tabClicked('more')"><div id="moreTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Больше..</a></li>
 	</ul>
 
 
@@ -108,12 +105,12 @@
 						</td>
 						<td style="border:none; vertical-align:middle;">
 							<span>
-								Plasma
+								Плазма
 							</span>
 						</td>
 						<td style="border: none; vertical-align:middle; text-align:center;">
 							<span>
-								<span id="plasmaps">0</span>/Sec
+								<span id="plasmaps">0</span>/сек.
 							</span>
 						</td>
 						<td style="border:none; vertical-align:middle; text-align:right;">
@@ -132,12 +129,12 @@
 						</td>
 						<td id="energyNav1" style="border:none; vertical-align:middle;">
 							<span>
-								Energy
+								Энергия
 							</span>
 						</td>
 						<td id="energyNav2" style="border: none; vertical-align:middle; text-align:center;">
 							<span>
-								<span id="energyps">0</span>/Sec
+								<span id="energyps">0</span>/сек.
 							</span>
 						</td>
 						<td id="energyNav3" style="border:none; vertical-align:middle; text-align:right;">
@@ -156,12 +153,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Uranium
+								Уран
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="uraniumps">0</span>/Sec
+								<span id="uraniumps">0</span>/сек.
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -178,12 +175,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Lava
+								Лава
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="lavaps">0</span>/Sec
+								<span id="lavaps">0</span>/сек.
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -196,7 +193,7 @@
 					</tr>
 					<tr id="collapseEarth" class="collapseEarth" style="border:none;">
 						<td colspan="4">
-							<span>Earth Resources</span> <span class="caret"></span>
+							<span>Основные ресурсы Земли</span> <span class="caret"></span>
 						</td>
 					</tr>
 					<tr id="oilNav" onclick="activeResourceTab('oilNav')" class="sideTab hidden" href="#oilTab" aria-controls="oilTab" role="tab" data-toggle="tab" style="height:60px;">
@@ -210,7 +207,7 @@
 						</td>
 						<td id="oilNav2" style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="oilps">0</span>/Sec
+								<span id="oilps">0</span>/сек.
 							</span>
 						</td>
 						<td id="oilNav3" style="vertical-align:middle; text-align:right;">
@@ -227,12 +224,12 @@
 						</td>
 						<td id="metalNav1" style="vertical-align:middle;">
 							<span>
-								Metal
+								Металл
 							</span>
 						</td>
 						<td id="metalNav2" style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="metalps">0</span>/Sec
+								<span id="metalps">0</span>/сек.
 							</span>
 						</td>
 						<td id="metalNav3" style="vertical-align:middle; text-align:right;">
@@ -249,12 +246,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Gems
+								Гемы
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="gemps">0</span>/Sec
+								<span id="gemps">0</span>/сек.
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -271,12 +268,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Charcoal
+								Уголь
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="charcoalps">0</span>/Sec
+								<span id="charcoalps">0</span>/сек.
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -293,12 +290,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Wood
+								Древесина
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="woodps">0</span>/Sec
+								<span id="woodps">0</span>/сек.
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -315,12 +312,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Silicon
+								Силикон
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="siliconps">0</span>/Sec
+								<span id="siliconps">0</span>/сек.
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -333,7 +330,7 @@
 					</tr>
 					<tr id="collapseInnerPlanet" class="collapseInnerPlanet hidden">
 						<td colspan="4">
-							<span>Inner Planetary Resources</span> <span class="caret"></span>
+							<span>Внутренние ресурсы Земли</span> <span class="caret"></span>
 						</td>
 					</tr>
 					<tr id="lunariteNav" onclick="activeResourceTab('lunariteNav')" class="sideTab hidden" href="#lunariteTab" aria-controls="lunariteTab" role="tab" data-toggle="tab" style="height:60px;">
@@ -342,12 +339,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Lunarite
+								Котиковит
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="lunariteps">0</span>/Sec
+								<span id="lunariteps">0</span>/сек.
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -364,12 +361,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Methane
+								Метан
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="methaneps">0</span>/Sec
+								<span id="methaneps">0</span>/сек.
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -386,12 +383,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Titanium
+								Титан
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="titaniumps">0</span>/Sec
+								<span id="titaniumps">0</span>/сек.
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -408,12 +405,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Gold
+								Золото
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="goldps">0</span>/Sec
+								<span id="goldps">0</span>/сек.
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -430,12 +427,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Silver
+								Серебро
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="silverps">0</span>/Sec
+								<span id="silverps">0</span>/сек.
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -448,7 +445,7 @@
 					</tr>
 					<tr id="collapseOuterPlanet" class="collapseOuterPlanet hidden">
 						<td colspan="4">
-							<span>Outer Planetary Resources</span> <span class="caret"></span>
+							<span>Внешние ресурсы Земли</span> <span class="caret"></span>
 						</td>
 					</tr>
 					<tr id="hydrogenNav" onclick="activeResourceTab('hydrogenNav')" class="sideTab hidden" href="#hydrogenTab" aria-controls="hydrogenTab" role="tab" data-toggle="tab" style="height:60px;">
@@ -457,12 +454,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Hydrogen
+								Водород
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="hydrogenps">0</span>/Sec
+								<span id="hydrogenps">0</span>/сек.
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -479,12 +476,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Helium
+								Гелий
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="heliumps">0</span>/Sec
+								<span id="heliumps">0</span>/сек.
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -501,12 +498,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Ice
+								Лед
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="iceps">0</span>/Sec
+								<span id="iceps">0</span>/сек.
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -523,12 +520,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Meteorite
+								Твердые породы
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="meteoriteps">0</span>/Sec
+								<span id="meteoriteps">0</span>/сек.
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -548,19 +545,19 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Plasma
+										Плазма
 									</h2>
 									<span>
-										Plasma is the 4th state of matter and is used by Tier 4 machines and large space structures as an extreme power source for your company. At first you can hold 100,000 plasma at once, but you can unlock and purchase Plasma Storage Units to increase this number.
+										Плазма является 4ым поколением материи, ее можно использовать только ракетами 4го уровня и крупными космическими конструкциями в качестве очень экстремального источника энергии для Ваших котиков.
 										<br>
-										Time remaining until <span id="plasmaLimitType">full</span> storage: <b><span id="plasmaLimitTime">N/A</span></b>
+										Осталось времени до <span id="plasmaLimitType">полной</span> загрузки: <b><span id="plasmaLimitTime">нет данных</span></b>
 										<br>
-										1 Plasma is created by infusing <span id="manualPlasmaHydrogenCost">10</span> Hydrogen with <span id="manualPlasmaEnergyCost">1000</span> Energy.
+										1 единица плазмы создается при смешивании <span id="manualPlasmaHydrogenCost">10</span> Водорода и <span id="manualPlasmaEnergyCost">1000</span> Энергии.
 									</span>
 									<br>
 									<br>
 									<hide class="gainButton">
-										<div onclick="gainResource('plasma')" class="btn btn-default">Gain <span id="plasmaGain">1</span></div>
+										<div onclick="gainResource('plasma')" class="btn btn-default">Собрать <span id="plasmaGain">1</span> плазму</div>
 										<br>
 										<br>
 									</hide>
@@ -572,13 +569,13 @@
 										PSUs: <span id="PSU">0</span>
 									</h3>
 									<span>
-										PSUs increase your plasma storage by 50,000 per PSU built.
+										Каждый PSUs увеличивает хранилище плазмы на 50,000.
 										<br>
-										Costs <span id="PSUSilverCost">770,000</span> Silver, <span id="PSUGoldCost">770,000</span> Gold, <span id="PSUUraniumCost">550,000</span> Uranium.
+										Необходимо: <span id="PSUSilverCost">770,000</span> Серебра, <span id="PSUGoldCost">770,000</span> Золота, <span id="PSUUraniumCost">550,000</span> Урана.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPSU()" class="btn btn-default">Get PSU</button>
+									<button onclick="getPSU()" class="btn btn-default">Установить PSUs</button>
 								</td>
 							</tr>
 							<tr id="plasmaStorageUnitsT2" class="hidden">
@@ -587,34 +584,34 @@
 										T2 PSUs: <span id="PSUT2">0</span>
 									</h3>
 									<span>
-										Tier 2 PSUs increase your plasma storage by 500,000 per PSU built.
+										Каждый Tier 2 PSUs увеличивает хранилище плазмы на 500,000.
 										<br>
-										Costs <span id="PSUT2SilverCost">9.300M</span> Silver, <span id="PSUT2GoldCost">9.300M</span> Gold, <span id="PSUT2UraniumCost">6.800M</span> Uranium.
+										Необходимо: <span id="PSUT2SilverCost">9.300M</span> Серебра, <span id="PSUT2GoldCost">9.300M</span> Золота, <span id="PSUT2UraniumCost">6.800M</span> Урана.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPSUT2()" class="btn btn-default">Get PSU T2</button>
+									<button onclick="getPSUT2()" class="btn btn-default">Установить PSU Tier 2</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Super-Heater: <span id="heater">0</span>
+										Супер-Нагреватель: <span id="heater">0</span>
 									</h3>
 									<span>
-										The Super-Heater throws electricity at Hydrogen to turn it into a plasmatic substance.
+										Супер-Нагреватель выбрасывает электричество в водород, превращая его в плазматическое вещество.
 										<br>
-										Uses 1,000 Energy and 10 Hydrogen per second.
+										Использует 1,000 Энергии и 10 Водорода каждую секунду.
 										<br>
-										Produces 1 Plasma per second.
+										Производит 1 Плазму в секунду.
 										<br>
-										Costs <span id="heaterLunariteCost">75,000</span> Lunarite, <span id="heaterGemCost">68,000</span> Gems, <span id="heaterSiliconCost">59,000</span> Silicon.
+										Необходимо: <span id="heaterLunariteCost">75,000</span> Котиковита, <span id="heaterGemCost">68,000</span> Гемов, <span id="heaterSiliconCost">59,000</span> Силикона.
 									</span>
 									<br>
 									<br>
-									<button onclick="getHeater()" class="btn btn-default">Get Super-Heater</button>
-									<button onclick="toggleHeater()" class="btn btn-default">Turn Super-Heater <span id="heaterToggled">Off</span></button>
-									<button onclick="destroyMachine('heater')" class="btn btn-default destroy hidden">Destroy Super-Heater</button>
+									<button onclick="getHeater()" class="btn btn-default">Установить Супер-Нагреватель</button>
+									<button onclick="toggleHeater()" class="btn btn-default">Переключить Супер-Нагреватель <span id="heaterToggled">Выключено</span></button>
+									<button onclick="destroyMachine('heater')" class="btn btn-default destroy hidden">Разобрать Супер-Нагреватель</button>
 								</td>
 							</tr>
 							<tr id="plasmaTier2" class="hidden">
