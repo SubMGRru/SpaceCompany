@@ -60,7 +60,7 @@ Game.achievements = (function() {
 			var bracket = data.brackets[data.unlocked + 1];
 
 			if(data.unlocked < data.brackets.length - 1 && data.evaluator(bracket)) {
-				Game.notifySuccess("Achievement Reached", this.getAchievementTitle(data, false));
+				Game.notifySuccess("Достигнуто достижение", this.getAchievementTitle(data, false));
 
 				this.unlock(id, data.unlocked + 1);
 
@@ -101,7 +101,7 @@ Game.achievements = (function() {
 		if (data.achievements && data.achievements.version) {
 			switch (data.achievements.version) {
 				case 6: this.loadV6(data); break;
-				default: console.debug("Could not load saved achievement data from version " + data.achievements.version); break;
+				default: console.debug("Не удалось загрузить информацию о достижениях из версии " + data.achievements.version); break;
 			}
 		}
 	};
