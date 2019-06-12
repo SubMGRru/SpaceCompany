@@ -100,7 +100,7 @@ var Game = (function() {
 
     instance.import = function() {
         var text = $('#impexpField').val();
-        if (!text.trim()) return console.warn("No save to import provided.");
+        if (!text.trim()) return console.warn("Нет охранений для импорта.");
         if(text.length % 4 !== 0) {
             console.log("String is not valid base64 encoded: " + text.length + ' (' + text.length % 4 + ')');
             return;
@@ -108,13 +108,13 @@ var Game = (function() {
 
         var decompressed = LZString.decompressFromBase64(text);
         if(!decompressed) {
-            console.log("Import Game failed, could not decompress!");
+            console.log("Импорт Игры не завершен, could not decompress!");
             return;
         }
 
         localStorage.setItem("save", decompressed);
 
-        console.log("Imported Saved Game");
+        console.log("Импортирован прогресс игры");
 
         window.location.reload();
     };
@@ -148,7 +148,7 @@ var Game = (function() {
         data = legacySave(data);
 
         localStorage.setItem("save",JSON.stringify(data));
-        Game.notifyInfo('Game Saved', 'Your save data has been stored in localStorage on your computer');
+        Game.notifyInfo('Game Saved', 'Ваш прогресс сохранен на памяти Вашего устройства.');
         console.log('Game Saved');
 
         return data;
@@ -213,16 +213,16 @@ var Game = (function() {
     };
 
     instance.deleteSave = function() {
-        var deleteSave = prompt("Are you sure you want to delete this save? It is irreversible! If so, type 'DELETE' into the box.");
+        var deleteSave = prompt("Вы уверены в том, что хотите удалить это сохранение ? Напишите ниже 'УДАЛИТЬ' для подтверждения.");
 
-        if(deleteSave === "DELETE") {
+        if(deleteSave === "УДАЛИТЬ") {
             localStorage.removeItem("save");
 
-            alert("Deleted Save");
+            alert("Сохранение было удалено.");
             window.location.reload();
         }
         else {
-            alert("Deletion Cancelled");
+            alert("Удаление сохранения отменено.");
         }
     };
 
@@ -266,7 +266,7 @@ var Game = (function() {
         // Do this in a setInterval so it gets called even when the window is inactive
         window.setInterval(function(){ Game.fixedUpdate(); },100);
 
-        console.debug("Load Complete");
+        console.debug("Загрузка завершена");
 
     };
 
@@ -322,8 +322,8 @@ var Game = (function() {
     instance.notifyStorage = function() {
         if(Game.settings.entries.notificationsEnabled === true){
             this.activeNotifications.storage = new PNotify({
-                title: "Storage Full!",
-                text: 'You will no longer collect resources when they are full.',
+                title: "Хранилище переполнено!",
+                text: 'Котики не могут собирать ресурсы, пока хранилище переполнено.',
                 type: 'warning',
                 animation: 'fade',
                 animate_speed: 'fast',
@@ -340,8 +340,8 @@ var Game = (function() {
 
     instance.notifyOffline = function(time) {
         this.activeNotifications.success = new PNotify({
-            title: "Offline Gains",
-            text: "You've been offline for " + Game.utils.getFullTimeDisplay(time, true),
+            title: "Доход в оффлайне",
+            text: "Вы пробыли оффлайн " + Game.utils.getFullTimeDisplay(time, true),
             type: 'info',
             animation: 'fade',
             animate_speed: 'fast',
@@ -375,10 +375,10 @@ var Game = (function() {
         if (timeLeft <= 15000) {
             element.show();
             if(timeLeft <= 5000){
-                element.text("Autosaving in " + (timeLeft / 1000).toFixed(1) + " seconds");
+                element.text("Автосохранение через " + (timeLeft / 1000).toFixed(1) + " секунд");
             }
             else{
-                element.text("Autosaving in " + (timeLeft / 1000).toFixed(0) + " seconds");
+                element.text("Autosaving in " + (timeLeft / 1000).toFixed(0) + " секунды");
             }
         } else {
             element.hide();
@@ -398,8 +398,8 @@ var Game = (function() {
 
         console.debug("Loading Game");
         
-        this.createInterval("Loading Animation", this.loadAnimation, 10);
-        this.createInterval("Loading", this.loadDelay, 1000);
+        this.createInterval("Загрузка анимаций с сервера..", this.loadAnimation, 100);
+        this.createInterval("Запуск..", this.loadDelay, 9000);
 
         this.update_frame(0);
     };
